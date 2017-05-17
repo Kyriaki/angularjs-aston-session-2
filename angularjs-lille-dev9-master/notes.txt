@@ -1,0 +1,18 @@
+Directives Angular les plus utiles:
+ng-app
+ng-model
+ng-bind
+ng-click
+ng-init
+ng-hide/ng-show
+ng-repeat
+ng-controller
+ng-style / ng-class
+ng-src
+ng-view
+
+Repo Github:
+https://github.com/cdufour/angularjs-lille-dev9
+
+Tuto directives personnalisées:
+https://youtu.be/H7k-3G8dPvE

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="testApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Formation Angular</title>
+    <link rel="stylesheet" href="app/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app/css/styles.css">
+  </head>
+  <body>
+
+    <nav ng-controller="menuController">
+      <ul class="nav nav-tabs">
+        <li ng-repeat="menu in menus">
+          <a href="{{menu.url}}">{{menu.label}}</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div ng-view></div>
+
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-route.min.js"></script>
+    <script src="scripts/util.js"></script>
+    <script src="app/app.js"></script>
+
+    <!-- controllers -->
+    <script src="app/controllers/testController.js"></script>
+
+    <!-- services/factories -->
+    <script src="app/services/clientFactory.js"></script>
+    <script src="app/services/testService.js"></script>
+    <script src="app/services/countryFactory.js"></script>
+
+    <!-- filters -->
+    <script src="app/filters/capitalizeFilter.js"></script>
+    <script src="app/filters/ellipseFilter.js"></script>
+
+    <!-- directives -->
+    <script src="app/directives/loremDirective.js"></script>
+    <script src="app/directives/clientDirective.js"></script>
+  </body>
+
+</html>

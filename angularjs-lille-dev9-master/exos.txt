@@ -1,0 +1,90 @@
+EXO
+Ajouter un autre champ de saisi
+Afficher dans le div la concaténation des deux valeurs
+saisies
+
+
+Ajouter un couple propriété/valeur 'age' à vos clients et afficher
+les clients par age croissant
+
+
+Remplacer par la liste à puces par un tableau deux colonnes
+(une pour le nom, une pour l'âge)
+
+
+Dans le select des pays, remplacer les pays écrits 'en dur'
+dans le code HTML par des données fournies par mainController
+
+
+Ajouter à l'UI un bouton permettant de modifier la classe
+attribuée à la première colonne du tableau clients (qui
+au chargement n'a pas de classe)
+
+
+Comportement du bouton:
+premier clic => class1
+deuxième clic = class2
+
+
+Changer le critère et l'ordre du tri
+en cliquant sur les entêtes de colonne (Nom, Age)
+
+*** J2 ***
+
+Insérer une colonne prénom entre nom et age.
+Le clic sur l'entête de colonne permettra triera par prénom
+
+
+Validation des données
+Permettre l'enregistrement d'un client lorsque:
+- chacun des input contient au moins un caractère
+- l'input age est une valeur numérique
+
+Modifier la fonction isOneFieldEmpty de manière
+à ce qu'elle ne prenne en compte les clés
+passées dans le tableau des clés exlues
+(deuxième argument de la fonction)
+
+** Routing **
+Ajouter une route '404' à votre table de routage
+Le template chargé affichera un message d'erreur,
+(Exemple: "Désolé, page introuvable")
+On redirigera l'internaute sur cette page en cas
+de chemin non trouvé
+
+
+*** J3 Services ***
+Compléter la view client.html en affichant les autres champs
+du client (photo, pays, etc.)
+
+Plus fort:
+Attribuer à un client plusieurs photos
+Dans la view clients.html, afficher un slideshow des photos du client
+
+
+Dans la view client.html, afficher la liste des autres clients
+(Nom, prénom). Le clic sur un élément de cette liste affiche le détail
+
+
+Dans la view client.html, afficher la liste des autres clients du même pays
+(Nom, prénom). Le clic sur un élément de cette liste affiche le détail
+
+
+Améliorer le filtre capitalize pour qu'il prenne en compte
+les noms composés (avec espace). Option: prendre le tiret en compte
+
+
+Créer et utiliser un filtre ellipse qui renvoie une version tronquée d'une chaîne
+lorsque celle-ci contient plus de 10 caractères
+
+exemple: Paulo Sousa Rebeira de Nacimiento | ellipse => Paulo Sousa...
+
+
+
+*** J4 ***
+Fournir la liste des pays par un serveur.
+Recommandation: créer un countryFactory
+
+
+Modifier clientDirective :
+Le bouton 'Masquer image' doit masquer la photo du client
