@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app>
+	<head>
+		<meta charset="utf-8">
+		<title>Formation Angular</title>
+		<script src="angular.min.js"></script>
+	</head>
+	<body ng-init="text2='hello'; clients=[{name : 'Roberto', age:29, country:'Spain'}, {name : 'Hanz', age:17, country:'Germany'}, {name : 'David', age:42, country:'England'}]">
+		<h1>Formation Angular</h1>
+
+		<input type="text" ng-model="text">
+		<div>{{text}}</div>
+		<div ng-bind="text"></div>
+		<button ng-click="text=''">Reset</button>
+		
+		<input type="text" ng-model="text2">
+		<input type="text" ng-model="text3">
+		<div>{{text2+text3}}</div>
+
+		{{2+2}}
+		<br><input type="checkbox" ng-model="hide"> Hide the paragraph
+		<br><input type="checkbox" ng-model="show"> Show the paragraph
+		<p ng-hide="hide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, nemo, adipisci? Inventore neque sit placeat sunt eius tenetur consequatur officiis. Officiis vel modi doloribus quidem quos maiores, assumenda voluptatem qui.</p>
+		<p ng-show="show">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, nemo, adipisci? Inventore neque sit placeat sunt eius tenetur consequatur officiis. Officiis vel modi doloribus quidem quos maiores, assumenda voluptatem qui.</p>
+
+		
+		<!--<p ng-repeat="client in clients | orderBy : 'age'">{{client.name}} {{client.age}}</p>-->
+		<div>
+			<input type="text" ng-model="search">
+			<select ng-model="search2">
+				<option value=""> Choose a country </option>
+				<option value="Germany">Germany</option>
+				<option value="Spain">Spain</option>
+				<option value="England">England</option>
+			</select>
+		</div>
+		
+		<table border="1">
+			<tr ng-repeat="client in clients | filter : search | filter : search2 | orderBy : 'age'">
+				<td>{{client.name}}</td>
+				<td>{{client.age}} ans</td>
+				<td>comes from {{client.country}}</td>
+			</tr>
+		</table>
+
+	
+	</body>
+</html>

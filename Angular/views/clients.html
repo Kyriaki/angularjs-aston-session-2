@@ -1,0 +1,69 @@
+<div ng-controller="mainController">
+			
+			<h1>{{titre}}</h1>
+
+			<input type="text" ng-model="text">
+			<div>{{text}}</div>
+			<div ng-bind="text"></div>
+			<button ng-click="reset();">Reset</button>
+			
+			<input type="text" ng-model="text2">
+			<input type="text" ng-model="text3">
+			<div>{{text2+text3}}</div>
+
+			{{2+2}}
+			<br><input type="checkbox" ng-model="hide"> Hide the paragraph
+			<br><input type="checkbox" ng-model="show"> Show the paragraph
+			<p ng-hide="hide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, nemo, adipisci? Inventore neque sit placeat sunt eius tenetur consequatur officiis. Officiis vel modi doloribus quidem quos maiores, assumenda voluptatem qui.</p>
+			<p ng-show="show">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, nemo, adipisci? Inventore neque sit placeat sunt eius tenetur consequatur officiis. Officiis vel modi doloribus quidem quos maiores, assumenda voluptatem qui.</p>
+
+			
+		<div style="margin-top: 40px;">
+			<button class="btn btn-primary" ng-click="isVisible=!isVisible;">Ajouter un client</button>
+			<div ng-show="isVisible">
+				<input type="text" placeholder="Nom" ng-model="client.name">
+				<input type="text" placeholder="Prénom" ng-model="client.firstname">
+				<input type="number" min=0 placeholder="Age" ng-model="client.age">
+				<input type="text" placeholder="Pays" ng-model="client.country">
+				<button class="btn btn-xs btn-primary" ng-click="registerCustomer();">Enregistrer</button>
+			</div>
+			<div ng-show="error">Error : please check your inputs</div>
+		</div>
+
+
+			<!--<p ng-repeat="client in clients | orderBy : 'age'">{{client.name}} {{client.age}}</p>-->
+			<div>
+				<input type="text" ng-model="search">
+				<select ng-model="search2">
+					<option value=""> Choose a country </option>
+					<option ng-repeat="country in countries" value={{country}}>{{country}}</option>
+				</select>
+			</div>
+
+			<div>{{clients.length}} clients</div>
+			<div>{{clientsFiltered.length}}/{{clients.length}} clients affichés</div>
+			
+			<table class="table table-striped">
+				<tr>
+					<th> Numéro </th>
+					<th> Photo </th>
+					<th class="clickable" ng-click="changeOrder('name');">Nom</th>
+					<th class="clickable" ng-click="changeOrder('firstname');">Prénom</th>
+					<th class="clickable" ng-click="changeOrder('age')">Age</th>
+					<th class="clickable" ng-click="changeOrder('country')">Pays</th>
+					<th>Action<th>
+					<th>Détails</th>
+				</tr>
+				<tr ng-repeat="client in clientsFiltered=(clients | filter : search | filter : search2 )| orderBy :criterium:reverse">
+					<td>{{$index+1}}</td>
+					<td><img class="clients" ng-src="img/{{client.img[0]}}"></td>
+					<td class="{{btnClass}}">{{client.name | capitalize | ellipse:10:"..."}}</td>
+					<td>{{client.firstname}}</td>
+					<td>{{client.age}} ans</td>	
+					<td>comes from {{client.country}}</td>
+					<td><button class="btn btn-danger" ng-click="deleteCustomer(client.name);">Supprimer</button></td>
+					<td><a class="btn btn-primary" href="#/clients/{{client.name}}">Détails</a></td>
+				</tr>
+			</table>
+			<button ng-click="switch()" class="btn btn-default">Switch</button>
+		</div>

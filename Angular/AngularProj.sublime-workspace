@@ -1,0 +1,324 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ng-re",
+				"ng-repeat\tAngularJS"
+			],
+			[
+				"client",
+				"clientFactory"
+			],
+			[
+				"country",
+				"countryFactory"
+			],
+			[
+				"$http",
+				"$http\tAngularJS"
+			],
+			[
+				"cli",
+				"clients"
+			],
+			[
+				"clie",
+				"clientFactory"
+			],
+			[
+				"ngr",
+				"ng-repeat\tAngularJS"
+			],
+			[
+				"$in",
+				"$interval\tAngularJS"
+			],
+			[
+				"$route",
+				"$routeParams\tAngularJS"
+			],
+			[
+				"route",
+				"$routeProvider\tAngularJS"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"Nom",
+				"Nom"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "AngularProj.sublime-project",
+			"settings":
+			{
+				"buffer_size": 262,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 242.0,
+		"last_filter": "pcu",
+		"selected_items":
+		[
+			[
+				"pcu",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"pcip",
+				"Package Control: Install Package"
+			],
+			[
+				"PCAR",
+				"Package Control: Add Repository"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 472.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/c/Users/ASt/Documents/Angular",
+		"/c/Users/ASt/Documents/Angular/app",
+		"/c/Users/ASt/Documents/Angular/app/controllers",
+		"/c/Users/ASt/Documents/Angular/server",
+		"/c/Users/ASt/Documents/Angular/views"
+	],
+	"file_history":
+	[
+		"/C/Users/ASt/Documents/Angular/css/style.css",
+		"/C/Users/ASt/Documents/Angular/views/details.html",
+		"/C/Users/ASt/Documents/Angular/app/services/countryFactory.js",
+		"/c/Users/ASt/Documents/Angular/app/services/clientFactory.js",
+		"/C/Users/ASt/Documents/Angular/views/clients.html",
+		"/c/Users/ASt/Documents/Angular/views/404.html",
+		"/C/Users/ASt/Documents/Angular/app/filters/capitalizeFilter.js",
+		"/C/Users/ASt/Documents/Angular/app/directives/templates/clientTemplate.html",
+		"/C/Users/ASt/Documents/Angular/app/directives/clientDirective.js",
+		"/c/Users/ASt/Documents/Angular/server/server.js",
+		"/C/Users/ASt/Documents/Angular/app/app.js",
+		"/c/Users/ASt/Documents/Angular/app/controllers/testController.js",
+		"/c/Users/ASt/Documents/Angular/views/test.html",
+		"/C/Users/ASt/Documents/Angular/index.html",
+		"/C/Users/ASt/Documents/Angular/app/directives/templates/lorem.html",
+		"/C/Users/ASt/Documents/Angular/app/directives/loremDirective.js",
+		"/C/Users/ASt/Desktop/server/server.js",
+		"/C/Users/ASt/Documents/Angular/app/services/clientFactory.js",
+		"/C/Users/ASt/Documents/Angular/app/services/testService.js",
+		"/C/Users/ASt/Documents/Angular/app/controllers/testController.js",
+		"/C/Users/ASt/Desktop/angular.txt",
+		"/C/Users/ASt/Documents/Angular/app/clientFactory.js",
+		"/C/Users/ASt/Documents/Angular/views/404.html",
+		"/C/Users/ASt/Documents/Angular/views/test.html",
+		"/C/Users/ASt/Documents/Angular/css/bootstrap.min.css",
+		"/C/Users/ASt/Documents/Angular/aide.html",
+		"/C/Users/ASt/AppData/Roaming/Sublime Text 3/Packages/LiveReload/LiveReload.sublime-settings",
+		"/C/Users/ASt/AppData/Roaming/Sublime Text 3/Packages/User/SublimeServer.sublime-settings",
+		"/C/Users/ASt/Documents/Angular/AngularProj.sublime-project",
+		"/C/Users/ASt/AppData/Roaming/Sublime Text 3/Packages/AngularJS/AngularJS-sublime-package.sublime-settings",
+		"/C/Users/ASt/Documents/Angular/angular.route.min.js",
+		"/C/Users/ASt/Documents/Angular/jquery-3.1.1.min.js",
+		"/C/Users/ASt/Documents/aide.html",
+		"/C/Users/ASt/Documents/app/app.js",
+		"/C/Users/ASt/Documents/index.html",
+		"/C/Users/ASt/Documents/index_v1.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"client",
+			"data",
+			"td",
+			"button",
+			"name",
+			"d",
+			"age",
+			"hide"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "AngularProj.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 262,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								262,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "AngularProj.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 176.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

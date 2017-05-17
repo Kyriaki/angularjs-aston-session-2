@@ -1,0 +1,9 @@
+<h2>Car Details : {{car.name}}</h2>
+
+<div class="col-md-12"><img ng-src="img/{{car.id}}.jpg"></div>
+<div class="col-md-12" ng-repeat="(key,data) in car">
+	<div ng-hide="data === car.id ">
+		<span class="col-md-6">{{key}} :</span><span class="col-md-6">{{data}}</span></div>
+	</div>
+
+<a href="#/">Get back to menu</a>

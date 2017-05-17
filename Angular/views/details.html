@@ -1,0 +1,16 @@
+<h2>Customer Details : {{client.name | capitalize}}</h2>
+
+<div class="col-md-8"><img class="client" ng-src="img/{{displayImg(client.img)}}"></div>
+<div class="col-md-4">
+	<div>{{client.name |capitalize}}</div>
+	<div>{{client.firstname}}</div>
+	<div>{{client.age}} ans</div>	
+	<div>{{client.country}}</div>
+
+	Autres clients
+	<ul>
+		<li ng-repeat="c in clients" ng-hide="c.name === client.name">
+		<a href="#/clients/{{c.name}}">{{c.firstname}} {{c.name | capitalize}}</a>
+		</li>
+	</ul>
+</div>

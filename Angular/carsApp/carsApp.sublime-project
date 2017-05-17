@@ -1,0 +1,14 @@
+{
+   "folders":
+   [
+      {
+         "path": "/c/Users/ASt/Documents/Angular/carsApp"
+      }
+   ],
+   "settings": {
+      "sublime-view-in-browser": {
+         "baseUrl": "http://localhost:8080",
+         "basePath": "C:\\home\\ASt\\Documents\\Angular\\carsApp"
+      }
+   }	
+}

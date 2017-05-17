@@ -1,0 +1,35 @@
+<div ng-controller="mainController">
+			
+	<h1>List of VROOMS</h1>
+
+	<div class="col-md-12">
+		<span class="col-md-2"> Filter by car name : </span>
+		<input class="col-md-2" type="text" ng-model="searchByName">
+		<span class="col-md-2"> Filter by ratings : </span>
+		<select class="col-md-2" ng-model="searchByRatings">
+			<option value=""> Select a rating </option>
+			<option value="0">0</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<span class="col-md-2"> Filter by price : </span>
+		<input class="col-md-2" type="number" min="0" ng-model="searchByPrice">
+	</div>
+	
+	<table class="table table-striped">
+		<tr>
+			<th> Photo </th>
+			<th> Marque et type </th>
+			<th> Evaluation </th>
+			<th> Prix par jour </th>
+			<th> Détails </th>
+		</tr>
+		<tr ng-repeat="car in cars | filter: searchByName | filter: {stars: searchByRatings} | filter: {dailyRate: searchByPrice}">
+			<td><img ng-src="img/{{car.id}}.jpg"></td>
+			<td>{{car.name}}</td>
+			<td>{{car.stars}}</td>
+			<td>{{car.dailyRate}}€/jour</td>	
+			<td><a class="btn btn-primary" href="#/cars/{{car.id}}">Détails</a></td>
+		</tr>
+	</table>
+</div>
